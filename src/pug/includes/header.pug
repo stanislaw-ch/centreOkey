@@ -1,0 +1,41 @@
+header.page-header
+  .page-header__contact.contact
+    ul.contact__list
+        li.contact__item.contact__item--phone
+          span.visually-hidden phone
+          svg(width='23' height='23')
+            use(xlink:href='img/sprite/sprite.svg#sprite-icon-phone')
+          p 8-950-19-18-509 / 8-904-98-19-067
+        li.contact__item.contact__item--email
+          span.visually-hidden email
+          svg(width='23' height='23')
+            use(xlink:href='img/sprite/sprite.svg#sprite-icon-mail')
+          p centre_ok@e1.ru
+        li.contact__item.contact__item--address
+          span.visually-hidden address
+          svg(width='20' height='24')
+            use(xlink:href='img/sprite/sprite.svg#sprite-icon-pin')
+          p г. Екатеринбург, ул. Братская, 14
+  .page-header__header
+    .page-header__title
+      p Добро пожаловать на сайт развивающего центра "О'кей"
+    form.page-header__search-form(action='#' method='POST' name='searchform')
+      input(type='text' name='search_words' placeholder='Поиск по сайту...')
+      button(type='submit' name='search') поиск
+  .page-header__picture
+    img(src='img/header.jpg' width='960' height='270' alt='Заглавное изображение')
+  nav.main-nav.main-nav--closed
+    button.main-nav__toggle(type='button')
+      span.visually-hidden Открыть меню
+    .main-nav__wrapper
+      ul.main-nav__list.site-list
+        li.site-list__item.site-list__item--option-1.site-list__item--active
+          a(href='#') Главная
+        li.site-list__item.site-list__item--option-2
+          a(href='#') Комплексное развитие
+        li.site-list__item.site-list__item--option-3
+          a(href='#') Английский для всех
+        li.site-list__item.site-list__item--option-4
+          a(href='#') Арт-студия
+        li.site-list__item.site-list__item--option-5
+          a(href='#') О нас

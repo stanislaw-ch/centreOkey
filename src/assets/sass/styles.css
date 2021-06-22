@@ -1,0 +1,494 @@
+/*-------------------------------------------Загрузка уникальных шрифтов*/
+@font-face {
+  font-family: 'BebasNeueBook';
+  src: url('../fonts/BebasNeueBook.eot');
+  src: url('../fonts/BebasNeueBook.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/BebasNeueBook.woff2') format('woff2'),
+       url('../fonts/BebasNeueBook.woff') format('woff'),
+       url('../fonts/BebasNeueBook.ttf') format('truetype'),
+       url('../fonts/BebasNeueBook.svg#BebasNeueBook') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Font_main';
+  src: url('../verdana.eot');
+  src: url('../verdana.woff2') format('woff2'),
+       url('../verdana.eot?#iefix') format('embedded-opentype'),
+	   url('../Verdana.woff') format('woff'),
+       url('../Verdana.ttf') format('truetype'),
+       url('../Verdana.svg#Verdana') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Karmina_Bold';
+  src: url('../fonts/KarminaBold.eot');
+  src: url('../fonts/KarminaBold.woff2') format('woff2'),
+       url('../fonts/KarminaBold.woff') format('woff'),
+       url('../fonts/KarminaBold.ttf') format('truetype'),
+       url('../fonts/KarminaBold.svg#KarminaBold') format('svg'),
+       url('../fonts/KarminaBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+/*-------------------------------------------Основные стили сайта*/
+body{
+	font-family:Verdana, 'Font_main';
+	font-size:20px;
+	margin:0;
+	padding:0;
+	background:#fff url("../images/b_wp_general_44_15.jpg")  no-repeat fixed center top !important ;
+}
+table{
+	border-spacing:0;
+	padding:0;
+}
+#body_main {
+	margin:0 auto;
+	padding:0 0 5px 0; 
+	width:990px;
+	background:#fff;
+}
+#body {
+	margin:0 auto;
+	width:960px;
+	background:#fff;
+}
+/*------------------------------------------Контакты шапки сайта*/
+#topmenu_contact_main{
+	padding:0;	
+	width:960px;
+	height:30px;
+	margin:0 0 10px 0;
+}
+#topmenu_contact_main p{
+	margin:0;	
+	color:#929497;
+	font-family:'BebasNeueBook';
+	letter-spacing:1px;
+	font-size:18px;
+	text-align:left;	
+	padding:0 0 0 27px;	
+}
+.topmenu_contact{	
+	padding:10px 0 0 0;
+}
+.contact_phone{
+	background:url("../images/tel_3.jpg") no-repeat;
+	float:right;
+	padding:0px 30px 0px 0;
+	width:150px;
+}
+.contact_post{
+	background:url("../images/email_3.jpg") no-repeat;
+	float:right;
+	padding:0px 30px 0px 0;
+	width:150px;
+}
+.contact_adresse{
+	background:url("../images/map_pin_3.jpg") no-repeat;
+	float:right;
+	width:260px;
+}
+.clear{
+	clear:both;
+}
+/*------------------------------------------Верхнее меню*/
+#topmenu{
+	background-color:#d8f9a9;
+}
+#topmenu ul{
+	margin:0;
+	padding:0;
+}
+#topmenu ul li{
+	float:left;
+	list-style:none;
+}
+#topmenu ul li a{
+	color:#fc0101;
+	font-size:26px;	
+	font-family:'Karmina_Bold';
+	letter-spacing: 1px;
+	display:block;
+	padding:15px 20px;
+	text-decoration:none;
+}
+#topmenu #topmenu_green a{
+	color:#58b15b;
+}
+#topmenu #topmenu_purple a{
+	color:#f51a85;
+}
+#topmenu #topmenu_orange a{
+	color:#ffb400;
+}
+#topmenu #topmenu_blue a{
+	color:#51b3ec;
+}
+#topmenu ul li.active a, #topmenu ul li a:hover{
+	background-color:#e4f4fe;
+}
+/*------------------------------------------Заголовок сайта*/
+#header img{
+	width:100%;		
+	display:block;
+}
+#header_intro{
+	background-color:#d8f9a9;
+	height:40px;
+	padding:10px 0 0 10px;
+}
+#header_intro p{
+	color:#049536;
+	letter-spacing: 1px;
+	font-size:28px;
+	margin:0;
+	font-family:'Karmina_Bold';
+	width:600px;
+	float:left;
+}
+#header_search_main{
+	float:right;
+	padding:3px 5px 0 0;
+	width:35%;
+}
+#header_search_main div{
+	float:left;
+}
+.header_search_main{
+	width:100%;
+}
+.header_search_input{
+	border:1px solid #a5c796;
+	height:23.5px;
+	width:68%;
+	color:#acacac;
+	padding-left:10px;	
+	font-size:18px;
+	font-family:'BebasNeueBook';
+	letter-spacing: 1px;
+	float:left;
+}
+.header_search_btn{
+	height:27.5px;
+	width:28%;
+	border:1px solid #a5c796;
+	background-color:#fff;
+	padding:1px 20px;
+	text-decoration:none;
+	color:#acacac;
+	font-weight:bold;
+	font-size:18px;	
+	font-family:'BebasNeueBook';
+	letter-spacing: 1px;
+	display:block;
+}
+.header_search_btn:hover{
+	background-color:#049536;
+	color:#fff;
+}	
+/*------------------------------------------Содержание сайта*/
+#content{
+	width:960px;	
+}
+.content_left{
+	float:left;
+	width:75%;
+}
+.content_left_height{
+	height:511px;
+}
+.content_left_col, .content_right_col{
+	width:49%;
+	margin:0 0 10px 0;
+}
+.content_left_col{
+	float:left;
+}
+.content_right_col{
+	float:right;
+}
+.content_title{
+	height:50px;	
+	color:#666666;
+	vertical-align:middle;
+	text-align:center;
+	border-bottom:1px solid #f51a85;
+	font-weight:bold;
+	font-size:22px;	
+	font-family:'BebasNeueBook';
+	letter-spacing: 1px;
+	margin:0;
+	padding:20px 0 0 0;
+}
+.content_title_article{	
+	color:#666666;
+	vertical-align:middle;
+	text-align:justify;
+	font-size:18px;	
+	font-weight:bold;
+	letter-spacing: 1px;
+	font-family:'BebasNeueBook';
+}
+.content_img{	
+	padding:20px 0 0 0;
+	width:100%;
+}
+.content_article{	
+	color:#666666;
+	vertical-align:middle;
+	text-align:justify;
+	font-size:14px;		
+	/* letter-spacing: 0.5px;	 */
+}
+.content_read_more{
+	padding:4px 10px;
+	/* text-decoration:none; */
+	color:#fdb914;
+	font-weight:bold;
+	font-size:15px;	
+	font-family:'BebasNeueBook';
+	letter-spacing: 1px;
+	/* border:1px solid #fdb914; */
+	/* width:120px;
+	display:block; */
+}
+.content_read_more:hover{
+	background-color:#fdb914;
+	color:#fff;
+	text-decoration:none;
+}
+/*------------------------------------------Новости сайта*/
+.content_right{
+	float:right;
+	width:23.5%;	
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+.content_right_title{
+	height:50px;
+	padding:20px 0 0 0;	
+	margin:0;
+	color:#666666;
+	vertical-align:middle;
+	text-align:center;
+	border-bottom:1px solid #f51a85;
+	font-weight:bold;
+	font-size:22px;
+	font-family:'BebasNeueBook';
+	letter-spacing: 2px;
+}
+.content_right_title_news{
+	border-left:5px solid #f51a85;	
+	color:#666666;
+	vertical-align:middle;
+	text-align:justify;
+	font-size:18px;	
+	font-weight:bold;
+	padding:0 0 0 5px;
+	margin:20px 0 0 0;
+	letter-spacing: 1px;
+	font-family:'BebasNeueBook';
+}
+.content_right_article_news{	
+	color:#666666;
+	vertical-align:middle;
+	text-align:justify;
+	font-size:14px;	
+	padding:10px 0 0 0px;
+	margin:0;
+}
+.content_right_article_date{	
+	color:#acacac;
+	vertical-align:middle;
+	text-align:justify;
+	font-size:11px;	
+	padding:15px 0 0 0px;
+	margin:0;
+	float:left;	
+}
+.content_right div{
+	padding:0 0 50px 0;
+}
+.content_right_read_more_news_blue, .content_right_read_more_news_green, .content_right_read_more_news_purple{
+	padding:4px 10px;
+	/* text-decoration:none; */
+	font-weight:bold;
+	font-size:15px;	
+	font-family:'BebasNeueBook';
+	letter-spacing: 1px;
+	float:right;
+	margin:10px 0 10px 0;
+	/* width:120px;
+	display:block; */
+}
+.content_right_read_more_news_blue{
+	color:#9ed8cc;
+	/* border:1px solid #9ed8cc;	 */
+}
+.content_right_read_more_news_blue:hover{
+	background-color:#9ed8cc;
+	color:#fff;
+	text-decoration:none;
+}
+.content_right_read_more_news_green{
+	color:#049536;
+	/* border:1px solid #d8f9a9; */
+}
+.content_right_read_more_news_green:hover{
+	background-color:#049536;
+	color:#fff;
+	text-decoration:none;
+}
+.content_right_read_more_news_purple{
+	color:#f51a85;
+	/* border:1px solid #f51a85; */
+}
+.content_right_read_more_news_purple:hover{
+	background-color:#f51a85;
+	color:#fff;
+	text-decoration:none;
+}
+/*------------------------------------------Подвал сайта*/
+#footer_main{
+	width:960px;
+	background-color:#d8f9a9;	
+}
+.footer_title, .footer_title_right{
+	font-family:'BebasNeueBook';	
+	color:#666666;
+	vertical-align:bottom;
+	text-align:left;
+	border-bottom:1px solid #a5c796;
+	font-size:22px;
+	font-weight:bold;
+	padding:0;
+	margin:0;
+	
+}
+.footer_title_right{
+	text-align:right;
+}
+.footer_left, .footer_right{	
+	width:48.9%;	
+}
+.footer_left{	
+	float:left;
+	padding:10px 0 0 10px;
+}
+.footer_right{		
+	text-align:right;
+	color:#666666;
+	vertical-align:top;
+	font-size:14px;
+	padding:10px 10px 0 0;
+	margin:0;
+	float:right;
+}
+.footer_info{
+	padding:10px 0 5px 0;
+}
+#subscribe{
+	width:100%;
+	margin:5px 0 5px 0;
+}
+.subscribe_email{
+	height:23.5px;
+	width:81%;
+	color:#acacac;
+	padding-left:10px;	
+	/* margin-top:0.5px;	 */
+	border:1px solid #a5c796;
+	font-size:18px;
+	font-family:'BebasNeueBook';
+	/* letter-spacing: 1px; */
+	float:left;
+	/* margin:0 5px 0 0; */
+}
+.subscribe_btn{
+	width:16%;
+	height:27.5px;
+	border:1px solid #a5c796;
+	background-color:#fff;
+	padding:1px 17px;
+	text-decoration:none;
+	font-weight:bold;
+	color:#acacac;
+	font-size:18px;	
+	font-family:'BebasNeueBook';
+	letter-spacing: 1px;
+	display:block;
+}
+.subscribe_btn:hover{
+	background-color:#049536;
+	color:#fff;
+}
+.footer_text, .footer_text_right{
+	font-family:Verdana, Font_main;	
+	color:#666666;
+	font-size:12px;
+	margin:0;
+}
+.footer_text{
+	text-align:left;
+}
+.footer_text_right{
+	text-align:right;
+	margin:0 0 10px 0;
+}
+.footer_text a{
+	color:#fdb914;
+}
+.footer_text a:hover{
+	color:#acacac;
+}
+#footer{
+	background-color:#e4f4fe;
+	width:960px;
+	height:35px;
+}
+#footer p{
+	font-size:12px;
+	font-family:Verdana, Font_main;
+	/* letter-spacing: 1px; */
+	color:#aaa;
+	margin:0;
+	padding:10px 0 0 15px;
+	text-align:center;
+}
+.footer_img_container{
+	margin:0;
+}
+.footer_img_vk{
+	background:url("../images/vk.png")no-repeat;
+	height:30px;
+	width:30px;
+	display:block;
+	float:right;
+	margin:5px 0 10px 0;
+}
+.live_inernet{
+	margin:5px 0 5px 0;
+}
+#webdesign {
+	font-size:10px;
+	font-family: Verdana, Font_main;
+	color:#a5c796;
+	margin:0 auto;	
+}
+#webdesign p{
+	margin:0;	
+	padding: 3px 0 0;
+    text-align: center;
+}
+#webdesign a{
+	color:#a5c796;
+	text-decoration:none;
+}
+#webdesign a:hover{
+	color:#a5c796;
+	text-decoration:underline;
+}

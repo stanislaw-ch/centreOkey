@@ -1,0 +1,23 @@
+body {
+  // max-width: 990px;
+  // margin: 0 auto;
+  // margin-top: 15px;
+  padding: 0;
+
+  font-size: 12px;
+  font-weight: 400;
+  font-family: $textFont;
+  line-height: 15px;
+  color: #000000;
+
+  background-color: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
