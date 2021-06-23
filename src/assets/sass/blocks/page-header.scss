@@ -26,6 +26,8 @@
   }
 
   &__search-form {
+    display: flex;
+    justify-content: space-between;
     height: 25px;
     padding-bottom: 5px;
 
@@ -35,6 +37,7 @@
 
     & input {
       height: 100%;
+      width: 100%;
       margin: 0;
       padding: 3px 10px 0;
       box-sizing: border-box;
@@ -42,6 +45,7 @@
       border: 1px solid #a5c796;
       color: #666666;
       letter-spacing: 0.06em;
+      border-radius: none;
     }
 
     & button {
@@ -100,27 +104,31 @@
     &__header {
       // flex-direction: column;
 
-      padding: 20px 13px 15px;
+      padding: 20px 4% 15px;
     }
 
     &__title {
       font-size: 25px;
-      line-height: 25px;
+      line-height: 28px;
       text-align: justify;
+      text-align-last: justify;
       letter-spacing: 0.14em;
     }
 
     &__search-form {
+      width: 100%;
       // align-self: start;
       // margin-top: 10px;
 
       & input {
-        width: 170px;
+        // width: 70%;
+        // width: 170px;
       }
 
       & button {
         width: 65px;
-        margin-left: 2px;
+        margin-left: 1%;
+        margin-right: 16%;
       }
     }
 

@@ -358,7 +358,7 @@ img {
   height: auto; }
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 15px 15px;
   background-color: #f5f5f5;
@@ -366,12 +366,12 @@ img {
 
 @media (max-width: 960px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     padding: 10px 10px; } }
 
 @media (max-width: 768px) {
   .container {
-    width: 320px;
+    max-width: 414px;
     padding: 5px 5px; } }
 
 .page-header__contact {
@@ -394,6 +394,8 @@ img {
     margin: 0; }
 
 .page-header__search-form {
+  display: flex;
+  justify-content: space-between;
   height: 25px;
   padding-bottom: 5px;
   font-size: 16px;
@@ -401,13 +403,15 @@ img {
   line-height: 16px; }
   .page-header__search-form input {
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 3px 10px 0;
     box-sizing: border-box;
     background: #ffffff;
     border: 1px solid #a5c796;
     color: #666666;
-    letter-spacing: 0.06em; }
+    letter-spacing: 0.06em;
+    border-radius: none; }
   .page-header__search-form button {
     width: 95px;
     height: 100%;
@@ -442,17 +446,19 @@ img {
 
 @media (max-width: 768px) {
   .page-header__header {
-    padding: 20px 13px 15px; }
+    padding: 20px 4% 15px; }
   .page-header__title {
     font-size: 25px;
-    line-height: 25px;
+    line-height: 28px;
     text-align: justify;
+    text-align-last: justify;
     letter-spacing: 0.14em; }
-  .page-header__search-form input {
-    width: 170px; }
-  .page-header__search-form button {
-    width: 65px;
-    margin-left: 2px; } }
+  .page-header__search-form {
+    width: 100%; }
+    .page-header__search-form button {
+      width: 65px;
+      margin-left: 1%;
+      margin-right: 16%; } }
 
 .contact__list {
   display: flex;
@@ -545,10 +551,12 @@ img {
       transition: ease-out 0.5s; } }
 
 @media (max-width: 768px) {
+  .main-nav__wrapper {
+    width: 100%; }
   .main-nav--opened .site-list {
-    width: 310px; }
+    width: 100%; }
   .main-nav__toggle {
-    right: 17px;
+    right: 6%;
     bottom: 20px;
     width: 25px;
     height: 25px; }
