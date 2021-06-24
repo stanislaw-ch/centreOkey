@@ -1,30 +1,29 @@
 footer.page-footer
-  //- .page-footer__content-wrapper
-  //-   a.page-footer__logo.logo(href='index.html')
-  //-     picture
-  //-       source(type='image/webp' srcset='img/logo-main@1x.webp 1x, img/logo-main@2x.webp 2x')
-  //-       // 1х: 945px; 2x: 1890px
-  //-       img(src='img/logo-main@1x.png' srcset='img/logo-main@2x.png 2x' width='54' height='57' alt='Logo von YIN YOUNG YOU')
-  //-   ul.page-footer__info-list
-  //-     li.page-footer__info-item
-  //-       a(href='impressum.html') Impressum
-  //-     li.page-footer__info-item
-  //-       a(href='datenschutz.html') Datenschutz
-  //-     li.page-footer__info-item
-  //-       a(href='datenschutz.html') Cookie-Richtlinien
-  //-   ul.page-footer__social.social
-  //-     li.social__item
-  //-       a(href='https://www.facebook.com/Yin-Young-You-110442964063523' target='_blank' rel='noopener')
-  //-         span.visually-hidden facebook
-  //-         svg(width='50' height='50')
-  //-           use(xlink:href='img/sprite/sprite.svg#sprite-icon-facebook')
-  //-     li.social__item
-  //-       a(href='https://www.linkedin.com/company/yin-young-you' target='_blank' rel='noopener')
-  //-         span.visually-hidden linkedin
-  //-         svg(width='50' height='50')
-  //-           use(xlink:href='img/sprite/sprite.svg#sprite-icon-linkedin')
-  //-     li.social__item
-  //-       a(href='https://www.instagram.com/yin_young_you/?hl=en' target='_blank' rel='noopener')
-  //-         span.visually-hidden instagram
-  //-         svg(width='50' height='50')
-  //-           use(xlink:href='img/sprite/sprite.svg#sprite-icon-instagram')
+  .page-footer__column-wrapper
+    .page-footer__left-column
+      .page-footer__header
+        h3 Будь в курсе!
+        p Введите Ваш E-mail, чтобы подписаться на новостную рассылку сайта
+      form.page-footer__search-form.search-form(action='#' method='POST' name='subscribeform')
+        input(type='text' name='email' placeholder='Введите свой E-mail')
+        button(type='submit' name='subscribe') о'кей
+      ul.page-footer__social.social
+        li.social__item
+          a(href='#' target='_blank' rel='noopener')
+            span.visually-hidden vkontakte
+            svg(width='30' height='30')
+              use(xlink:href='img/sprite/sprite.svg#sprite-icon-vk')
+        li.social__item
+          a(href='#' target='_blank' rel='noopener')
+            span.visually-hidden odnoklassiniki
+            svg(width='30' height='30')
+              use(xlink:href='img/sprite/sprite.svg#sprite-icon-ok')
+    .page-footer__right-column
+      .page-footer__header
+        h3 Будь на связи!
+        ul.page-footer__contact
+          li.page-footer__contact-item Наш адрес: г. Екатеринбург, ул. Братская, 14
+          li.page-footer__contact-item Тел.: 8-950-19-18-509 / 8-904-98-19-067
+          li.page-footer__contact-item E-mail: centre_ok@e1.ru
+  .page-footer__copyright
+    p © Психолого-развивающий центр "О'кей", 2015-2021
