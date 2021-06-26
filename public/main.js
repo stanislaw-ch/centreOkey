@@ -62,6 +62,11 @@ function setSlideNews() {
   function getStepCount() {
     slidesOnView = Math.floor(container.clientWidth / slideItem.clientWidth);
     stepCount = slidesCount - slidesOnView;
+
+    if (stepCount === slidesCount) {
+      stepCount--;
+    }
+
     return stepCount;
   }
 
@@ -181,7 +186,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1624715764805
+      // 1624716164696
       var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"publicPath":"../","locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -317,7 +322,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("42fd7134e6868aaec2d4")
+/******/ 		__webpack_require__.h = () => ("071759802b506bff3a68")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

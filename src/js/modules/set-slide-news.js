@@ -15,6 +15,9 @@ export function setSlideNews() {
   function getStepCount() {
     slidesOnView = Math.floor(container.clientWidth / slideItem.clientWidth);
     stepCount = slidesCount - slidesOnView;
+    if (stepCount === slidesCount) {
+      stepCount--;
+    }
     return stepCount;
   }
 
