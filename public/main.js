@@ -123,6 +123,7 @@ function setSlideNews() {
   window.addEventListener("resize", function () {
     getStepCount();
     mainSlide.style.transform = "translateX(0px)";
+    activeSlideIndex = 0;
   });
 
   function changeSlide(direction) {
@@ -221,7 +222,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1624729465297
+      // 1624732064726
       var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"publicPath":"../","locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -357,7 +358,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("0dc1105bc2e16d556b7e")
+/******/ 		__webpack_require__.h = () => ("6460f1c03e5dc0a9cf91")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

@@ -41,6 +41,7 @@ export function setSlideNews() {
   window.addEventListener(`resize`, function () {
     getStepCount();
     mainSlide.style.transform = `translateX(0px)`;
+    activeSlideIndex = 0;
   });
 
   function changeSlide(direction) {
