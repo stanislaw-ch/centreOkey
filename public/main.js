@@ -48,11 +48,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "setSlideNews": () => (/* binding */ setSlideNews)
 /* harmony export */ });
 function setSlideNews() {
-  console.log("object");
   var rightBtn = document.querySelector(".news__slide-button--right");
   var leftBtn = document.querySelector(".news__slide-button--left");
   var container = document.querySelector(".news__slider-container");
   var slideItem = document.querySelector(".news__item");
+  var slideItems = document.querySelectorAll(".news__item");
   var mainSlide = document.querySelector(".news__wrapper");
   var slidesCount = mainSlide.querySelectorAll("li").length;
   var activeSlideIndex = 0;
@@ -103,6 +103,44 @@ function setSlideNews() {
     var length = slideItem.clientWidth;
     mainSlide.style.transform = "translateX(-".concat(activeSlideIndex * length, "px)");
   }
+
+  slideItems.forEach(function (item) {
+    item.addEventListener("touchstart", handleTouchStart, false);
+    item.addEventListener("touchmove", handleTouchMove, false);
+  });
+  var xDown = null;
+  var yDown = null;
+
+  function handleTouchStart(evt) {
+    xDown = evt.touches[0].clientX;
+    yDown = evt.touches[0].clientY;
+  }
+
+  function handleTouchMove(evt) {
+    if (!xDown || !yDown) {
+      return;
+    }
+
+    var xUp = evt.touches[0].clientX;
+    var yUp = evt.touches[0].clientY;
+    var xDiff = xDown - xUp;
+    console.log("xDiff: ", xDiff);
+    var yDiff = yDown - yUp;
+    console.log("yDiff: ", yDiff);
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+      if (xDiff > 0) {
+        changeSlide("right");
+      } else {
+        changeSlide("left");
+      }
+    }
+    /* reset values */
+
+
+    xDown = null;
+    yDown = null;
+  }
 }
 
 /***/ }),
@@ -143,7 +181,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1624714404699
+      // 1624715764805
       var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"publicPath":"../","locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -279,7 +317,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("378f4f2750c63f2e6972")
+/******/ 		__webpack_require__.h = () => ("42fd7134e6868aaec2d4")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
