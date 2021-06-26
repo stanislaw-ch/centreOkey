@@ -10,9 +10,16 @@
   &__wrapper {
     box-sizing: border-box;
     width: 250px;
-    height: max-content;
-    padding: 20px 15px;
+    margin: 0;
+    padding: 20px 0 0;
+    list-style: none;
     background-color: #ffffff;
+    transition: ease-in 0.5s;
+  }
+
+  &__item {
+    height: max-content;
+    padding: 0 15px 20px;
 
     & h3 {
       margin: 0;
@@ -29,6 +36,7 @@
       text-align: justify;
     }
   }
+
 
   &__slide-button {
     display: none;
@@ -51,7 +59,13 @@
     }
 
     &__wrapper {
-      width: 225px;
+      display: flex;
+      width: 675px;
+    }
+
+    &__item {
+      box-sizing: border-box;
+      min-width: 225px;
     }
 
     &__slide-button {
@@ -130,6 +144,12 @@
         top: 4px;
       }
     }
+
+    &__slider-container {
+      overflow: hidden;
+      display: flex;
+      max-width: 675px;
+    }
   }
 }
 
@@ -139,8 +159,16 @@
       display: none;
     }
 
+    &__slider-container {
+      max-width: 76%;
+    }
+
     &__wrapper {
-      width: 76%;
+      width: 100%;
+    }
+
+    &__item {
+      min-width: 100%;
     }
   }
 }
