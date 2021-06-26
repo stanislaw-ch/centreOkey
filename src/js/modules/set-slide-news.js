@@ -40,7 +40,7 @@ export function setSlideNews() {
 
   window.addEventListener(`resize`, function () {
     getStepCount();
-    console.log(stepCount);
+    mainSlide.style.transform = `translateX(0px)`;
   });
 
   function changeSlide(direction) {

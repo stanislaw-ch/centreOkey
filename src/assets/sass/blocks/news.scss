@@ -66,6 +66,7 @@
     &__item {
       box-sizing: border-box;
       min-width: 225px;
+      max-width: 225px;
     }
 
     &__slide-button {
@@ -169,6 +170,7 @@
 
     &__item {
       min-width: 100%;
+      max-width: 100%;
     }
   }
 }

@@ -2,7 +2,7 @@ extends ../layout/main
 
 block variables
   - var title = 'Центр "Окей" - психолого - развивающий центр';
-  - var description = 'Мы специализируемся именно на преподавании английского языка';
+  - var description = 'Мы специализируемся на преподавании английского языка';
 
 block content
   .page-main__wrapper
@@ -51,13 +51,16 @@ block content
           .post__footer.content-footer
             span 16.08.2020 18:08
             a(href="#") Читать далее &rang;&rang;
-      .post__pagination
-        a(href="#").post__pagination--active
-          |1
-        a(href="#")
-          |2
-        a(href="#")
-          |3
+      ul.post__pagination
+        li.post__pagination-item.post__pagination-item--active
+          a(href="#")
+            |1
+        li.post__pagination-item
+          a(href="#")
+            |2
+        li.post__pagination-item
+          a(href="#")
+            |3
     section.news
       .news__header.header
         p Новости
