@@ -105,33 +105,32 @@
     &__header {
       // flex-direction: column;
 
-      padding: 20px 4% 15px;
+      padding: 20px 8px 15px;
     }
 
     &__title {
       width: 100%;
       flex-direction: column;
-      font-size: 25px;
-      line-height: 28px;
-      text-align: justify;
-      letter-spacing: 0.14em;
+      font-size: 33px;
+      line-height: 33px;
+      letter-spacing: 0.05em;
 
       // & p {
       // }
 
-      & p:last-of-type {
-        padding-top: 8px;
+      & p {
+        // padding-top: 15px;
         padding-left: 0;
+        // padding-bottom: 10px;
         text-align: center;
-        border-top: 1px solid #049536;
-        border-bottom: 1px solid #049536;
+        // border-bottom: 1px solid #666666;
       }
     }
 
     &__search-form {
       width: 100%;
       // align-self: start;
-      margin-top: 20px;
+      margin-top: 15px;
 
       & input {
         // width: 70%;

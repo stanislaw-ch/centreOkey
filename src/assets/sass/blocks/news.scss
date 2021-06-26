@@ -1,0 +1,146 @@
+.news {
+  width: 250px;
+  z-index: 1;
+  position: relative;
+
+  &__header {
+    background-color: #ffffff;
+  }
+
+  &__wrapper {
+    box-sizing: border-box;
+    width: 250px;
+    height: max-content;
+    padding: 20px 15px;
+    background-color: #ffffff;
+
+    & h3 {
+      margin: 0;
+      font-family: $titleFont;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 18px;
+      letter-spacing: 0.03em;
+      text-align: justify;
+    }
+
+    & p {
+      margin: 10px 0 15px;
+      text-align: justify;
+    }
+  }
+
+  &__slide-button {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .news {
+    order: 1;
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    background-color: #ffffff;
+    box-shadow: 0 5px 5px -4px rgba(0, 0, 0, 0.25);
+
+    &__header {
+      display: none;
+    }
+
+    &__wrapper {
+      width: 225px;
+    }
+
+    &__slide-button {
+      display: block;
+      position: absolute;
+      cursor: pointer;
+
+      top: 50%;
+      margin-top: -11px;
+      width: 11px;
+      height: 22px;
+
+      background-color: transparent;
+      border: none;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 3px;
+        height: 15px;
+
+        background-color: #f51a85;
+      }
+
+      &--left {
+        left: 20px;
+
+        &:hover {
+          filter: drop-shadow(0 3px 1px rgba(245, 26, 133, 0.8));
+        }
+      }
+
+      &--right {
+        right: 20px;
+
+        &:hover {
+          filter: drop-shadow(0 3px 1px rgba(245, 26, 133, 0.8));
+        }
+      }
+
+      &--left::before,
+      &--left::after {
+        left: 0;
+      }
+
+      &--right::before,
+      &--right::after {
+        right: 0;
+      }
+
+      &--left::before,
+      &--right::after {
+        transform: rotate(45deg);
+      }
+
+      &--right::before,
+      &--left::after {
+        transform: rotate(-45deg);
+      }
+
+      &--right::before {
+        top: -5px;
+      }
+
+      &--right::after {
+        top: 4px;
+      }
+
+      &--left::before {
+        top: -5px;
+      }
+
+      &--left::after {
+        top: 4px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .news {
+    &__hidden {
+      display: none;
+    }
+
+    &__wrapper {
+      width: 50%;
+    }
+  }
+}

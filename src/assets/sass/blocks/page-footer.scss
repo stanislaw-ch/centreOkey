@@ -1,6 +1,4 @@
 .page-footer {
-  margin-top: 10px; //
-
   &__column-wrapper {
     display: flex;
     justify-content: space-between;
@@ -71,7 +69,9 @@
     &__column-wrapper {
       position: relative;
       flex-direction: column;
-      padding-bottom: 40px;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-bottom: 45px;
     }
 
     &__header {

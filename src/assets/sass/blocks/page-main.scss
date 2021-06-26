@@ -1,0 +1,13 @@
+.page-main {
+  &__wrapper {
+    display: flex;
+  }
+}
+
+@media (max-width: 960px) {
+  .page-main {
+    &__wrapper {
+      flex-direction: column;
+    }
+  }
+}

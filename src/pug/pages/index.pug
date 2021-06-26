@@ -5,287 +5,79 @@ block variables
   - var description = 'Мы специализируемся именно на преподавании английского языка';
 
 block content
-  //- section.offer.section
-  //-   .offer__bg
-  //-   .container
-  //-     .offer__wrapper
-  //-       .offer__content-wrapper
-  //-         h2.visually-hidden
-  //-           | Angebot für ein individuell an die Bedürfnisse deines Kindes angepasstes Kursprogramm
-  //-         .offer__logo
-  //-           picture
-  //-             source(type='image/webp' srcset='img/logo-main@1x.webp 1x, img/logo-main@2x.webp 2x')
-  //-             // 1х: 945px; 2x: 1890px
-  //-             img(src='img/logo-main@1x.png' srcset='img/logo-main@2x.png 2x' width='167' height='175' alt='Logo von YIN YOUNG YOU')
-  //-         .offer__content
-  //-           h3 More Colours, More You
-  //-           p Hier entsteht unser innovatives Angebot für ein individuell an die Bedürfnisse deines Kindes angepasstes Präventionsprogramm.
-  //-             br
-  //-             | Mit dem Ziel, deinem Kind mit viel Spaß dabei zu helfen, den Weg in eine gesunde und glückliche Zukunft zu gehen und sowohl alltägliche als auch schwierige Aufgaben selbst meistern zu können. Und das Ganze auf wissenschaftlich basierter Basis.
-  //-       .offer__subscribe.subscribe
-  //-         p Trage hier deine E-Mail-Adresse ein - wir informieren dich gerne, sobald wir starten können:
-  //-         form.form(action='subscribe.php' method='POST')
-  //-           .subscribe__fields-wrapper
-  //-             label.visually-hidden(for='email-1') E-mail
-  //-             input#email-1.subscribe__input.form__input(type='email' name='email' data-type='email' required='')
-  //-             span.form__input-message
-  //-             button.form__button(type='submit') Abonnieren
-  //-           .form__message.form__message--success.form__message--hidden
-  //-             p Prüf bitte deinen Posteingang oder Spam-Ordner, um dein Abonnement zu bestätigen
-  //-           .form__message.form__message--error.form__message--hidden
-  //-             p Oops! Leider ist etwas Schiefgelaufen :/
-  //- section.method.section
-  //-   .container
-  //-     .method__content-wrapper
-  //-       h2.visually-hidden Psychologische Methoden für ein langfristiges psychisches Wohlbefinden
-  //-       .method__content
-  //-         h3 Was braucht ein Kind für ein langfristiges psychisches Wohlbefinden?
-  //-         p
-  //-           | Wir nehmen jedes Kind und jede*n Jugendliche*n in den eigenen Bedürfnissen und Interessen wahr und entwickeln daraus individuell angepasste und gesundheitsfördernde Kursprogramme. Diese bestehen aus wissenschaftlich belegten Methoden die Spaß machen und durch Psychologinnen konzipiert wurden. Dabei nutzen wir Inhalte aus dem Kinderyoga, der Kunsttherapie, Theaterpädagogik und vielen mehr…
-  //-       .method__visualization-wrapper
-  //-         ul.method__visualization-list
-  //-           li.method__visualization-item
-  //-             picture
-  //-               source(type='image/webp' srcset='img/concept-logo-nature@1x.webp 1x, img/concept-logo-nature@2x.webp 2x')
-  //-               // 1х: 207px; 2x: 414px
-  //-               img(src='img/concept-logo-nature@1x.png' srcset='img/concept-logo-nature@2x.png 2x' width='94' height='90' alt='Logo der psychologischen Methode')
-  //-           li.method__visualization-item
-  //-             picture
-  //-               source(type='image/webp' srcset='img/concept-logo-act@1x.webp 1x, img/concept-logo-act@2x.webp 2x')
-  //-               // 1х: 176px; 2x: 352px
-  //-               img(src='img/concept-logo-act@1x.png' srcset='img/concept-logo-act@2x.png 2x' width='81' height='90' alt='Logo der psychologischen Methode')
-  //-           li.method__visualization-item
-  //-             picture
-  //-               source(type='image/webp' srcset='img/concept-logo-yoga@1x.webp 1x, img/concept-logo-yoga@2x.webp 2x')
-  //-               // 1х: 193px; 2x: 386px
-  //-               img(src='img/concept-logo-yoga@1x.png' srcset='img/concept-logo-yoga@2x.png 2x' width='88' height='90' alt='Logo der psychologischen Methode')
-  //-           li.method__visualization-item
-  //-             picture
-  //-               source(type='image/webp' srcset='img/concept-logo-art@1x.webp 1x, img/concept-logo-art@2x.webp 2x')
-  //-               // 1х: 178px; 2x: 356px
-  //-               img(src='img/concept-logo-art@1x.png' srcset='img/concept-logo-art@2x.png 2x' width='81' height='90' alt='Logo der psychologischen Methode')
-  //-           li.method__visualization-item
-  //-             picture
-  //-               source(type='image/webp' srcset='img/concept-logo-dance@1x.webp 1x, img/concept-logo-dance@2x.webp 2x')
-  //-               // 1х: 207px; 2x: 414px
-  //-               img(src='img/concept-logo-dance@1x.png' srcset='img/concept-logo-dance@2x.png 2x' width='92' height='90' alt='Logo der psychologischen Methode')
-  //-           li.method__visualization-item
-  //-             picture
-  //-               source(type='image/webp' srcset='img/concept-logo-music@1x.webp 1x, img/concept-logo-music@2x.webp 2x')
-  //-               // 1х: 198px; 2x: 396px
-  //-               img(src='img/concept-logo-music@1x.png' srcset='img/concept-logo-music@2x.png 2x' width='90' height='90' alt='Logo der psychologischen Methode')
-  //- section.concept.section
-  //-   .container
-  //-     .concept__content-wrapper
-  //-       h2.visually-hidden Konzept von YIN YOUNG YOU
-  //-       .concept__content
-  //-         h3 Wissenschaftlich Basiert
-  //-         p
-  //-           | YIN YOUNG &amp; YOU besteht aus einer Kombination von wissenschaftlich belegten Therapieformen, bei denen die Wirksamkeit zu spezifischen Problematiken vielfältig bewiesen wurde. Beispielsweise konnte gezeigt werden, dass Methoden der Musiktherapie unterstützend bei Einschlafproblematiken wirken können (Wang, Sun &amp; Zang, 2014). Die Basis der Kurse bilden spielerische und hilfreiche Übungen, welche bei den individuellen Bedürfnissen ansetzt und zugeschnitten auf den individuellen Lebensalltag des Kindes ist: mit dessen Problemen, Freuden und Interessen. Wir, Susanne und Stella, haben mithilfe unserer Erfahrungen aus dem Psychologiestudium, dem praktischen Wissen aus der Arbeit mit Kindern und Jugendlichen und unseren bisherigen Forschungsarbeiten ein einzigartiges Modell entwickelt, die Methoden verschiedener Therapieformen kombiniert, sinnvoll und kindgerecht zu nutzen. Damit wird das große Ziel verfolgt, die Kenntnisse aus der Wissenschaft anzuwenden, um dein Kind in der Gesundheit präventiv zu fördern und ihr/ihm einen Werkzeugkoffer für eine nachhaltige glückliche Zukunft zu geben.
-  //- section.prevention.section
-  //-   .container
-  //-     h2.visually-hidden Prävention
-  //-     .prevention__content
-  //-       h3 Prävention und warum es für alle wichtig ist.
-  //-       p
-  //-         | Prävention = “Oberbegriff für!{' '}
-  //-         span zielgerichtete
-  //-         |  Maßnahmen und Aktivitäten, um Krankheiten oder gesundheitliche Schädigungen zu vermeiden, [oder] das Risiko der Erkrankung zu verringern” (Bundesministerium für Gesundheit, 2021).
-  //-         br
-  //-         |           Prävention ist also für die Gesundheit aller Menschen wichtig. Und je früher man damit beginnt, desto wirkungsvoller. Unser Fokus liegt daher auf Kindern und Jugendlichen. Viele Kinder haben das Glück, gesund und ohne Sorgen aufwachsen zu können. Es gibt aber auch Kinder und Jugendliche die neben alterstypischen Schwierigkeiten zusätzlich noch andere Sorgen als ständige Begleiter haben. Durch Mehrfachbelastungen sind diese einem besonders hohen Risiko ausgesetzt, psychisch zu erkranken.
-  //-         br
-  //-         |           Welche Mehrfachbelastungen sind gemeint? Schambesetzte Themen wie die eigene Sexualität, ein für sie empfundenes “unnormales” Familienleben, Rassismus- oder Mobbingerfahrungen, … möchten wir durch unsere Präventions-App erreichen. Ohne Angst vor Bewertung, flexibel von Zuhause, wann immer sie wollen, erhalten sie durch YIN YOUNG &amp; YOU eine helfende Hand. Denn jedes Kinderherz hat es verdient glücklich zu sein und zu verstehen:!{' '}
-  //-         span Ich bin gut so wie ich bin!
-  //-         br
-  //-         |           Wie sollte diese Hilfe aussehen?
-  //-         br
-  //-         |           Örtlich und zeitlich flexibel, anonym und ohne Hemmungen:!{' '}
-  //-         span Die YIN YOUNG &amp; YOU App.
-  //- section.app.section
-  //-   h2.visually-hidden Yin Young and You App
-  //-   .app__title-wrapper
-  //-     .container
-  //-       h3
-  //-         | Die YIN YOUNG &amp; YOU App.
-  //-         br
-  //-         span Eine helfende Hand, jederzeit und überall.
-  //-   .container
-  //-     .app__content
-  //-       p
-  //-         | Die YIN YOUNG &amp; YOU App für ein nachhaltiges psychisches Wohlbefinden für Kinder und Jugendliche. Als Psychologinnen legen wir einen großen Wert auf Wirksamkeit. Deshalb besteht unsere App aus zwei Elementen, um dein Kind bestmöglich zu unterstützen.
-  //-       ul.app__list-elements
-  //-         li.app__item-element
-  //-           .app__picture
-  //-             picture
-  //-               source(type='image/webp' srcset='img/app-anamnese@1x.webp 1x, img/app-anamnese@2x.webp 2x')
-  //-               // 1х: 152px; 2x: 304px
-  //-               img(src='img/app-anamnese@1x.png' srcset='img/app-anamnese@2x.png 2x' width='114' height='95' alt='Bild vom Element')
-  //-           .app__item-content
-  //-             b 1. Anamnese
-  //-             p Welche Bedürfnisse und Interessen hat dein Kind?
-  //-         li.app__item-element
-  //-           .app__picture
-  //-             picture
-  //-               source(type='image/webp' srcset='img/app-praeventions@1x.webp 1x, img/app-praeventions@2x.webp 2x')
-  //-               // 1х: 161px; 2x: 322px
-  //-               img(src='img/app-praeventions@1x.png' srcset='img/app-praeventions@2x.png 2x' width='121' height='107' alt='Bild vom Element')
-  //-           .app__item-content
-  //-             b 2. Präventionsprogramm
-  //-             p Verschiedene Module, individuell angepasst auf dein Kind.
-  //-       h4 Für Wen ist die Yin Young &amp; you App
-  //-       .app__visualization-wrapper
-  //-         ul.app__visualization-list
-  //-           li.app__visualization-item
-  //-             picture
-  //-               source(type='image/webp' srcset='img/app-farbkleks-gelb@1x.webp 1x, img/app-farbkleks-gelb@2x.webp 2x')
-  //-               // 1х: 620px; 2x: 1240px
-  //-               img(src='img/app-farbkleks-gelb@1x.png' srcset='img/app-farbkleks-gelb@2x.png 2x' width='306' height='306' alt='Bild vom Präventionsprogramm')
-  //-             .app__visualization-text
-  //-               p.app__hover-above
-  //-                 | Kinder und Jugendliche,
-  //-                 br
-  //-                 span
-  //-                   | ohne erhöhtes Risiko psychisch
-  //-                   br
-  //-                   |  zu erkranken
-  //-               p.app__hover-below
-  //-                 | Zur allgemeinen Prävention des psychischen Wohlbefindens und Stärkung des glücklichen Selbst
-  //-           li.app__visualization-item
-  //-             picture
-  //-               source(type='image/webp' srcset='img/app-farbkleks-tuerkis@1x.webp 1x, img/app-farbkleks-tuerkis@2x.webp 2x')
-  //-               // 1х: 600px; 2x: 1200px
-  //-               img(src='img/app-farbkleks-tuerkis@1x.png' srcset='img/app-farbkleks-tuerkis@2x.png 2x' width='306' height='306' alt='Bild vom Präventionsprogramm')
-  //-             .app__visualization-text
-  //-               p.app__hover-above
-  //-                 | Kinder und Jugendliche
-  //-                 br
-  //-                 span
-  //-                   | mit erhöhtem Risiko psychisch
-  //-                   br
-  //-                   |  zu erkranken
-  //-                 br
-  //-                 | (z.B. Kinder psychisch
-  //-                 br
-  //-                 |  belasteter Eltern)
-  //-               p.app__hover-below
-  //-                 | Zur Prävention des psychischen Wohlbefindens mit an die speziellen Lebenswelten der Kinder und Jugendlichen angepassten Inhalte
-  //- section.survey.section
-  //-   .container
-  //-     h2.visually-hidden Umfrage
-  //-     .survey__content
-  //-       h3 Deine Meinung ist uns wichtig - Welchen Fokus wünschst du dir für dein Kind?
-  //-       form.form(method='post')
-  //-         ul.form__option-list
-  //-           li.form__option-item
-  //-             input#option-1.visually-hidden.form__option-input(type='checkbox' name='option_1')
-  //-             label(for='option-1') Allgemeine Prävention für das psychische Wohlbefinden
-  //-           li.form__option-item
-  //-             input#option-2.visually-hidden.form__option-input(type='checkbox' name='option_2')
-  //-             label(for='option-2') Psychisch belastete Eltern
-  //-           li.form__option-item
-  //-             input#option-3.visually-hidden.form__option-input(type='checkbox' name='option_3')
-  //-             label(for='option-3') Mobbing in der Schule
-  //-           li.form__option-item
-  //-             input#option-4.visually-hidden.form__option-input(type='checkbox' name='option_4')
-  //-             label(for='option-4') Eigene Sexualität
-  //-           li.form__option-item
-  //-             input#option-5.visually-hidden.form__option-input(type='checkbox' name='option_5')
-  //-             label(for='option-5') Rassismus-Erfahrung
-  //-           li.form__option-item
-  //-             input#option-6.visually-hidden.form__option-input(type='checkbox' name='option_6')
-  //-             label(for='option-6') Scheidungskinder
-  //-           li.form__option-item.form__option-item--option-list
-  //-             input#option-7.visually-hidden.form__option-input(type='checkbox' name='option_7')
-  //-             label(for='option-7') Eigene Angabe
-  //-         .form__option-self.form__option-self--hidden
-  //-           .survey__form-input-wrapper
-  //-             label(for='option-8') Eigene Angabe (max. 80 Zeichen):
-  //-             input#option-8.form__option-input(type='text' name='option_8' maxlength='80')
-  //-           .survey__form-button-wrapper
-  //-             button.survey__form-button.survey__form-button--cancel.form__button(type='button') Verwerfen
-  //-             button.survey__form-button.survey__form-button--send.form__button(type='submit' disabled='') Übernehmen
-  //-         .survey__form-success.survey__form-success--hidden Vielen Dank für deine Teilnahme!
-  //-         button.survey__form-button.survey__form-button--submit.form__button(type='submit' disabled='') Antwort abschicken
-  //-         .form__message.form__message--error.form__message--hidden
-  //-           p Oops! Leider ist etwas Schiefgelaufen :/
-  //- section.team
-  //-   .container
-  //-     .team__content-wrapper
-  //-       h2.visually-hidden Unser Team
-  //-       .team__content
-  //-         h3 Ein Team mit Herz, Verstand und einem gemeinsamen Ziel:
-  //-         b Die Gesundheit von Kindern und Jugendlichen nachhaltig fördern!
-  //-       .team__visualization-wrapper
-  //-         ul.team__visualization-list
-  //-           li.team__visualization-item
-  //-             picture
-  //-               source(type='image/webp' srcset='img/team-foto-susanne@1x.webp 1x, img/team-foto-susanne@2x.webp 2x')
-  //-               // 1х: 400px; 2x: 800px
-  //-               img(src='img/team-foto-susanne@1x.png' srcset='img/team-foto-susanne@2x.png 2x' width='213' height='213' alt='Foto von Susanne')
-  //-             dl
-  //-               dt Susanne
-  //-               dd
-  //-                 | Gründerin
-  //-                 br
-  //-                 |  M.Sc. Psychologin
-  //-           li.team__visualization-item
-  //-             picture
-  //-               source(type='image/webp' srcset='img/team-foto-stella@1x.webp 1x, img/team-foto-stella@2x.webp 2x')
-  //-               // 1х: 400px; 2x: 800px
-  //-               img(src='img/team-foto-stella@1x.png' srcset='img/team-foto-stella@2x.png 2x' width='213' height='213' alt='Foto von Stella')
-  //-             dl
-  //-               dt Stella
-  //-               dd
-  //-                 | Gründerin
-  //-                 br
-  //-                 |  M.Sc. (cand.) Psychologin
-  //-           li.team__visualization-item
-  //-             picture
-  //-               source(type='image/webp' srcset='img/team-foto-philip@1x.webp 1x, img/team-foto-philip@2x.webp 2x')
-  //-               // 1х: 400px; 2x: 800px
-  //-               img(src='img/team-foto-philip@1x.png' srcset='img/team-foto-philip@2x.png 2x' width='213' height='213' alt='Foto von Philip')
-  //-             dl
-  //-               dt Philip
-  //-               dd UX Designer
-  //- section.sponsors
-  //-   .container
-  //-     .sponsors__content-wrapper
-  //-       h2.visually-hidden Sponsoren
-  //-       .sponsors__content
-  //-         h3 Yin Young &amp; You wird gefördert durch:
-  //-       .sponsors__visualization-wrapper
-  //-         ul.sponsors__visualization-list
-  //-           li.sponsors__visualization-item
-  //-             picture
-  //-               source(type='image/webp' srcset='img/sponsors-ESF@1x.webp 1x, img/sponsors-ESF@2x.webp 2x')
-  //-               // 1х: 250px; 2x: 500px
-  //-               img(src='img/sponsors-ESF@1x.png' srcset='img/sponsors-ESF@2x.png 2x' width='168' height='121' alt='Logo vom Sponsor')
-  //-           li.sponsors__visualization-item
-  //-             picture
-  //-               source(type='image/webp' srcset='img/sponsors-berlin@1x.webp 1x, img/sponsors-berlin@2x.webp 2x')
-  //-               // 1х: 265px; 2x: 530px
-  //-               img(src='img/sponsors-berlin@1x.png' srcset='img/sponsors-berlin@2x.png 2x' width='170' height='116' alt='Logo vom Sponsor')
-  //-           li.sponsors__visualization-item
-  //-             picture
-  //-               source(type='image/webp' srcset='img/sponsors-profund@1x.webp 1x, img/sponsors-profund@2x.webp 2x')
-  //-               // 1х: 320px; 2x: 640px
-  //-               img(src='img/sponsors-profund@1x.png' srcset='img/sponsors-profund@2x.png 2x' width='197' height='73' alt='Logo vom Sponsor')
-  //- section.newsletter
-  //-   .newsletter__bg
-  //-   .container
-  //-     .newsletter__content-wrapper
-  //-       .newsletter__content
-  //-         h3 Du möchtest auf dem Laufenden bleiben?
-  //-         .newsletter__subscribe.subscribe
-  //-           p
-  //-             | Trage hier deine E-Mail-Adresse ein - wir informieren dich gerne, sobald wir starten können:
-  //-           form.form(action='subscribe.php' method='POST')
-  //-             .subscribe__fields-wrapper
-  //-               label.visually-hidden(for='email-2') E-mail
-  //-               input#email-2.subscribe__input.form__input(type='email' name='email' data-type='email' required='')
-  //-               span.form__input-message
-  //-               button.form__button(type='submit') Abonnieren
-  //-             .form__message.form__message--success.form__message--hidden
-  //-               p Prüf bitte deinen Posteingang oder Spam-Ordner, um dein Abonnement zu bestätigen
-  //-             .form__message.form__message--error.form__message--hidden
-  //-               p Oops! Leider ist etwas Schiefgelaufen :/
+  .page-main__wrapper
+    section.post
+      .post__wrapper
+        .post__header.header
+          p ОГЭ по английскому языку
+        img(src="img/news_11.jpeg", alt="Изображение новости")
+        .post__content-wrapper
+          h3 Подготовка к ОГЭ по английскому для учащихся 8-9 классов
+          p Подготовка к ОГЭ по английскому языку - это двухгодичная программа, готовящая к сдаче основного государственного экзамена по английскому языку в 9 классе.
+            |Подготовка к ОГЭ по английскому языку - это двухгодичная программа, готовящая к сдаче основного государственного экзамена по английскому языку в 9 классе.
+          .post__footer.content-footer
+            span 16.08.2020 18:08
+            a(href="#") Читать далее &rang;&rang;
+      .post__wrapper
+        .post__header.header
+          p ОГЭ по английскому языку
+        img(src="img/news_11.jpeg", alt="Изображение новости")
+        .post__content-wrapper
+          h3 Подготовка к ОГЭ по английскому для учащихся 8-9 классов
+          p Подготовка к ОГЭ по английскому языку - это двухгодичная программа, готовящая к сдаче основного государственного экзамена по английскому языку в 9 классе.
+            |Подготовка к ОГЭ по английскому языку - это двухгодичная программа, готовящая к сдаче основного государственного экзамена по английскому языку в 9 классе.
+          .post__footer.content-footer
+            span 16.08.2020 18:08
+            a(href="#") Читать далее &rang;&rang;
+      .post__wrapper
+        .post__header.header
+          p ОГЭ по английскому языку
+        img(src="img/news_11.jpeg", alt="Изображение новости")
+        .post__content-wrapper
+          h3 Подготовка к ОГЭ по английскому для учащихся 8-9 классов
+          p Подготовка к ОГЭ по английскому языку - это двухгодичная программа, готовящая к сдаче основного государственного экзамена по английскому языку в 9 классе.
+            |Подготовка к ОГЭ по английскому языку - это двухгодичная программа, готовящая к сдаче основного государственного экзамена по английскому языку в 9 классе.
+          .post__footer.content-footer
+            span 16.08.2020 18:08
+            a(href="#") Читать далее &rang;&rang;
+      .post__wrapper
+        .post__header.header
+          p ОГЭ по английскому языку
+        img(src="img/news_11.jpeg", alt="Изображение новости")
+        .post__content-wrapper
+          h3 Подготовка к ОГЭ по английскому для учащихся 8-9 классов
+          p Подготовка к ОГЭ по английскому языку - это двухгодичная программа, готовящая к сдаче основного государственного экзамена по английскому языку в 9 классе.
+            |Подготовка к ОГЭ по английскому языку - это двухгодичная программа, готовящая к сдаче основного государственного экзамена по английскому языку в 9 классе.
+          .post__footer.content-footer
+            span 16.08.2020 18:08
+            a(href="#") Читать далее &rang;&rang;
+      .post__pagination
+        a(href="#").post__pagination--active
+          |1
+        a(href="#")
+          |2
+        a(href="#")
+          |3
+    section.news
+      .news__header.header
+        p Новости
+      button(type='button').news__slide-button.news__slide-button--right
+      button(type='button').news__slide-button.news__slide-button--left
+      .news__wrapper
+        h3 СТАРТ ЗАНЯТИЙ В ГРУППЕ 3 КЛАССА для новичков
+        p Если ваш ребенок перешел в 3 класс, но вам кажется, что первый год ...
+        .news__footer.content-footer
+          span 16.08.2020 18:08
+          a(href="#") Читать далее &rang;&rang;
+      .news__wrapper.news__hidden
+        h3 СТАРТ ЗАНЯТИЙ В ГРУППЕ 3 КЛАССА для новичков
+        p Если ваш ребенок перешел в 3 класс, но вам кажется, что первый год ...
+        .news__footer.content-footer
+          span 16.08.2020 18:08
+          a(href="#") Читать далее &rang;&rang;
+      .news__wrapper.news__hidden
+        h3 СТАРТ ЗАНЯТИЙ В ГРУППЕ 3 КЛАССА для новичков
+        p Если ваш ребенок перешел в 3 класс, но вам кажется, что первый год ...
+        .news__footer.content-footer
+          span 16.08.2020 18:08
+          a(href="#") Читать далее &rang;&rang;
