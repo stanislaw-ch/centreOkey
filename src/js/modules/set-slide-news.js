@@ -12,6 +12,10 @@ export function setSlideNews() {
   let slidesOnView = Math.floor(container.clientWidth / slideItem.clientWidth);
   let stepCount = slidesCount - slidesOnView;
 
+  function handleAnimationEnd() {
+    mainSlide.classList.remove(`news__ease-in`);
+  }
+
   function getStepCount() {
     slidesOnView = Math.floor(container.clientWidth / slideItem.clientWidth);
     stepCount = slidesCount - slidesOnView;
@@ -39,12 +43,15 @@ export function setSlideNews() {
   });
 
   window.addEventListener(`resize`, function () {
-    getStepCount();
     mainSlide.style.transform = `translateX(0px)`;
-    activeSlideIndex = 0;
+    if (document.body.clientWidth < 959) {
+      getStepCount();
+      activeSlideIndex = 0;
+    }
   });
 
   function changeSlide(direction) {
+    mainSlide.classList.add(`news__ease-in`);
     if (direction === `right`) {
       activeSlideIndex++;
       if (activeSlideIndex === stepCount + 1) {
@@ -59,10 +66,14 @@ export function setSlideNews() {
 
     const length = slideItem.clientWidth;
 
-    mainSlide.style.transform = `translateX(-${activeSlideIndex * length}px)`;
+    if (document.body.clientWidth < 959) {
+      mainSlide.style.transform = `translateX(-${activeSlideIndex * length}px)`;
+      setTimeout(handleAnimationEnd, 500);
+    }
   }
 
   slideItems.forEach((item) => {
+    console.log(`document.body.clientWidth: `, document.body.clientWidth);
     item.addEventListener(`touchstart`, handleTouchStart, false);
     item.addEventListener(`touchmove`, handleTouchMove, false);
   });
@@ -84,9 +95,7 @@ export function setSlideNews() {
     let yUp = evt.touches[0].clientY;
 
     let xDiff = xDown - xUp;
-    console.log(`xDiff: `, xDiff);
     let yDiff = yDown - yUp;
-    console.log(`yDiff: `, yDiff);
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       if (xDiff > 0) {
