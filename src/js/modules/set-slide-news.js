@@ -18,7 +18,11 @@ export function setSlideNews() {
 
   function getStepCount() {
     slidesOnView = Math.floor(container.clientWidth / slideItem.clientWidth);
-    stepCount = slidesCount - slidesOnView;
+    if (slidesCount < slidesOnView) {
+      stepCount = 0;
+    } else {
+      stepCount = slidesCount - slidesOnView;
+    }
     if (stepCount === slidesCount) {
       stepCount--;
     }
@@ -46,6 +50,7 @@ export function setSlideNews() {
     mainSlide.style.transform = `translateX(0px)`;
     if (document.body.clientWidth < 959) {
       getStepCount();
+      console.log(`getStepCount(): `, getStepCount());
       activeSlideIndex = 0;
     }
   });
@@ -73,7 +78,6 @@ export function setSlideNews() {
   }
 
   slideItems.forEach((item) => {
-    console.log(`document.body.clientWidth: `, document.body.clientWidth);
     item.addEventListener(`touchstart`, handleTouchStart, false);
     item.addEventListener(`touchmove`, handleTouchMove, false);
   });
