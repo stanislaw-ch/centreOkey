@@ -21,6 +21,9 @@
     list-style: none;
     background-color: #ffffff;
     // transition: ease-in 0.1s;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   &__wrapper-full {

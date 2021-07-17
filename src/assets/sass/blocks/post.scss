@@ -15,9 +15,15 @@
     margin-bottom: 10px;
     background-color: #ffffff;
     // max-height: max-content;
+    border-radius: 15px;
 
     &:nth-child(2n) {
       margin-right: 0;
+    }
+
+    &:nth-child(-n + 2) {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
     }
 
     & h3 {
@@ -119,6 +125,9 @@
     padding: 0;
     list-style: none;
     background-color: #ffffff;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 
     & a {
       padding: 0 2px;
@@ -161,6 +170,10 @@
       width: 100%;
       margin-right: 0;
       margin-bottom: 10px;
+
+      &:nth-child(n + 2) {
+        border-radius: 15px;
+      }
     }
   }
 }
