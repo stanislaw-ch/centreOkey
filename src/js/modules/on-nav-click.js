@@ -1,6 +1,12 @@
 export function onNavClick(className, classNameActive) {
   const nodeElement = document.querySelectorAll(`.${className}`);
 
+  function removeActiveClass() {
+    nodeElement.forEach((item) => {
+      item.classList.remove(classNameActive);
+    });
+  }
+
   nodeElement.forEach((element) => {
     element.addEventListener(`click`, (evt) => {
       removeActiveClass();
@@ -8,11 +14,5 @@ export function onNavClick(className, classNameActive) {
         evt.target.parentElement.classList.add(classNameActive);
       }
     });
-
-    function removeActiveClass() {
-      nodeElement.forEach((item) => {
-        item.classList.remove(classNameActive);
-      });
-    }
   });
 }

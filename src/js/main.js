@@ -1,8 +1,5 @@
-import {setToggle} from "./modules/set-toggle.js";
-import {setSlideNews} from "./modules/set-slide-news.js";
-// import {onNavClick} from "./modules/on-nav-click.js";
+import {getToggle} from "./modules/get-toggle.js";
+import {getSlideNews} from "./modules/get-slide-news.js";
 
-setToggle();
-setSlideNews();
-// onNavClick(`site-list__item`, `site-list__item--active`);
-// onNavClick(`post__pagination-item`, `post__pagination-item--active`);
+getToggle();
+getSlideNews();
