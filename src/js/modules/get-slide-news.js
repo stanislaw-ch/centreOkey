@@ -1,4 +1,4 @@
-export function setSlideNews() {
+export function getSlideNews() {
   const rightBtn = document.querySelector(`.news__slide-button--right`);
   const leftBtn = document.querySelector(`.news__slide-button--left`);
   const container = document.querySelector(`.news__slider-container`);

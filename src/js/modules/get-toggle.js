@@ -1,4 +1,4 @@
-export function setToggle() {
+export function getToggle() {
   const toggle = document.querySelector(`.main-nav__toggle`);
   const mainNav = document.querySelector(`.main-nav`);
 
