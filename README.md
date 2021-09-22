@@ -1,4 +1,4 @@
-# Webpack template for YingYoungYou Landing page
+# Webpack template for "Centre okey" page
 ## Basic commands for work
 * Installation - `npm i`
 * Running a local server - `npm start`
